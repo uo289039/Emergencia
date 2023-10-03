@@ -7,15 +7,18 @@ public class Atleta {
 	
 	private String dni;
 	private String nombre;
+	private String sexo;
 	private String categoria;
 	private Date fechaInscripcion;
+	private Date fechaNacimiento;
 	
-	public Atleta(String dni, String nombre, String categoria, Date fechaInscripcion) {
+	public Atleta(String dni, String nombre, String sexo, String categoria, Date fechaInscripcion, Date fechaNacimiento) {
 		super();
 		this.dni = dni;
 		this.nombre = nombre;
 		this.categoria = categoria;
 		this.fechaInscripcion = fechaInscripcion;
+		this.fechaNacimiento = fechaNacimiento;
 	}
 
 	public String getDni() {
@@ -48,6 +51,14 @@ public class Atleta {
 	
 	public void setFechaInscripcion(Date fechaInscripcion) {
 		this.fechaInscripcion = fechaInscripcion;
+	}
+	
+	public Date getFechaNacimiento() {
+		return fechaInscripcion;
+	}
+	
+	public void setFechaNacimiento(Date fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
 	}
 
 	@Override

@@ -18,10 +18,12 @@ public class Console {
 	
 	public void run() {
 		
-		Atleta a = new Atleta("Usain Bolt", "12345678B", "Correr", new Date());
+		@SuppressWarnings("deprecation")
+		Atleta a = new Atleta("Usain Bolt", "12345678B", "H", "Correr", new Date(), new Date(1985, 11, 17));
 		Competicion c = new Competicion("Carrera Anual Laciana", Tipo.MONTANA, 5, 5.5, new Date(), new Date());
 		
-		Atleta a2 = new Atleta("José Luis Perales", "12345679P", "Correr", new Date());
+		@SuppressWarnings("deprecation")
+		Atleta a2 = new Atleta("José Luis Perales", "12345679P", "H",  "Correr", new Date(),  new Date(1992, 07, 24));
 		Competicion c2 = new Competicion("Vuelta A Albacete", Tipo.RUTA, 10, 15, new Date(), new Date());
 		
 		c.addAtleta(a);
